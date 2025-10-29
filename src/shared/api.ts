@@ -2496,8 +2496,26 @@ export const sambanovaModels = {
 // Cerebras
 // https://inference-docs.cerebras.ai/api-reference/models
 export type CerebrasModelId = keyof typeof cerebrasModels
-export const cerebrasDefaultModelId: CerebrasModelId = "qwen-3-coder-480b-free"
+export const cerebrasDefaultModelId: CerebrasModelId = "zai-glm-4.6"
 export const cerebrasModels = {
+	"zai-glm-4.6": {
+		maxTokens: 40000,
+		contextWindow: 128000,
+		supportsImages: false,
+		supportsPromptCache: false,
+		inputPrice: 0,
+		outputPrice: 0,
+		description: "Highly intelligent model general-purpose model with ~2000 tokens/s",
+	},
+	"gpt-oss-120b": {
+		maxTokens: 40000,
+		contextWindow: 128000,
+		supportsImages: false,
+		supportsPromptCache: false,
+		inputPrice: 0,
+		outputPrice: 0,
+		description: "Intelligent general-purpose model with ~3000 tokens/s",
+	},
 	"qwen-3-coder-480b-free": {
 		maxTokens: 40000,
 		contextWindow: 64000,
