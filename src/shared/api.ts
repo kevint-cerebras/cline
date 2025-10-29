@@ -3000,7 +3000,7 @@ export const cerebrasModels = {
 		supportsPromptCache: false,
 		inputPrice: 0,
 		outputPrice: 0,
-		description: "Intelligent general purpose model with 2,000 tokens/s",
+		description: "Intelligent general purpose model with up to 1,000 tokens/s",
 	},
 	"gpt-oss-120b": {
 		maxTokens: 65536,
